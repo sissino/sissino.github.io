@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yassine Chentouf | Portfolio Ingénierie</title>
+    <!-- Police d'écriture moderne -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- Icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Yassine<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#experience">Expérience</a></li>
+                <li><a href="#projects">Projets & R&D</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Bonjour, je suis <span class="highlight">Yassine Chentouf</span>.</h1>
+            <h2>Étudiant en Ingénierie Électronique & Systèmes Embarqués.</h2>
+            <p>
+                Passionné par la conception de systèmes complexes, de la modélisation mathématique jusqu'à la microfabrication en salle blanche et au déploiement d'intelligences artificielles embarquées.
+            </p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-microchip"></i> Voir mon travail</a>
+                <a href="CV_Yassine_Chentouf.pdf" target="_blank" class="btn btn-secondary"><i class="fa-solid fa-file-pdf"></i> Mon CV</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expériences Section -->
+    <section id="experience" class="section bg-light">
+        <div class="section-container">
+            <h3 class="section-title">Expérience Professionnelle</h3>
+            
+            <div class="timeline">
+                <!-- Expérience 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>Identification paramétrique d'une valve électronique (ETCS)</h4>
+                        <h5>Universitat Politècnica de Catalunya (UPC) | <em>Stage de Recherche</em></h5>
+                        <p>Étude et contrôle d'une valve papillon d'admission automobile (Continental VDO). Modélisation mathématique avancée (modèle d'état) intégrant les non-linéarités complexes telles que les frottements (Coulomb/visqueux) et l'asymétrie du ressort de rappel.</p>
+                        <ul>
+                            <li>Développement d'un estimateur adaptatif et résolution d'équations différentielles via la méthode d'intégration d'Euler sous <strong>Python</strong>.</li>
+                            <li>Validation expérimentale sur banc d'essai didactique via une interface <strong>LabJack</strong>.</li>
+                            <li><strong>Résultat :</strong> Convergence des paramètres physiques stabilisée grâce à l'ajustement de la fréquence d'échantillonnage et un gain d'observateur optimal (λ=10). Rédaction et soutenance intégrales en anglais.</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span>Python</span><span>LabJack</span><span>Théorie du Contrôle</span><span>Méthode d'Euler</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Expérience 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>Technicien en Bureau d'Études Exécution</h4>
+                        <h5>Eiffage Énergie Systèmes | <em>Stage</em></h5>
+                        <p>Participation à des projets d'envergure (Hôpitaux, Parkings, Cliniques vétérinaires) en assurant la conception, le dimensionnement et la conformité normative des installations électriques.</p>
+                        <ul>
+                            <li><strong>Éclairagisme :</strong> Modélisation 3D et simulations sous <strong>Dialux</strong>. Optimisation de l'éclairement, de l'uniformité et de l'UGR dans le strict respect de la norme NF EN 12464-1.</li>
+                            <li><strong>Conception CAO :</strong> Mise à jour de plans "As-Built" sous <strong>AutoCAD</strong>, redéfinition des chemins de câbles et réorganisation des TGBT.</li>
+                            <li><strong>Dimensionnement :</strong> Réalisation de notes de calculs sous <strong>Caneco BT</strong> pour valider les sections de câbles, les disjoncteurs et vérifier les chutes de tension.</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span>AutoCAD</span><span>Caneco BT</span><span>Dialux Evo</span><span>Normes Électriques</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projets Section -->
+    <section id="projects" class="section">
+        <div class="section-container">
+            <h3 class="section-title">Projets d'Ingénierie & R&D</h3>
+
+            <!-- Projet 1 : Home Trainer -->
+            <div class="project-showcase">
+                <div class="project-image">
+                    <div class="placeholder-box">
+                        <i class="fa-solid fa-bicycle"></i>
+                        <span>🖼️ Insérer ici : Photo du banc d'essai ou du Dashboard</span>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h4>Home Trainer Interactif Connecté</h4>
+                    <p class="project-subtitle">Système Électromécanique & IoT</p>
+                    <p>Transformation d'un vélo classique en simulateur d'entraînement intelligent. Le système adapte automatiquement la résistance de pédalage en fonction du dénivelé d'un fichier de parcours GPX réel.</p>
+                    <ul class="project-details">
+                        <li><strong>Électromécanique :</strong> Freinage généré par une Machine à Courant Continu (MCC) couplée à une transmission mécanique (rapport de 21).</li>
+                        <li><strong>Contrôle :</strong> Pilotage de 16 paliers de charge linéaire via une carte 4 relais commandée par un <strong>ESP32</strong>.</li>
+                        <li><strong>Instrumentation :</strong> Acquisition de la vitesse par interruption matérielle (Capteur Hall KY-003) avec filtrage anti-rebond (100ms) et mesure BPM.</li>
+                        <li><strong>IHM :</strong> Serveur local <strong>Raspberry Pi</strong> (Flask/Dash en Python) assurant la communication bidirectionnelle WiFi avec l'ESP32 pour l'affichage en temps réel.</li>
+                    </ul>
+                    <div class="tech-stack">
+                        <span>ESP32</span><span>Raspberry Pi</span><span>Python (Flask)</span><span>Électrotechnique (MCC)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projet 2 : Capteur Hangar -->
+            <div class="project-showcase reverse">
+                <div class="project-image">
+                    <div class="placeholder-box">
+                        <i class="fa-solid fa-microchip"></i>
+                        <span>🖼️ Insérer ici : Routage PCB ou montage ESP32-C6</span>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h4>Nœud Capteur IoT pour Hangar Agricole</h4>
+                    <p class="project-subtitle">Acquisition de données & Basse Consommation</p>
+                    <p>Conception d'un système de télémétrie sans fil ultra-basse consommation (deep-sleep) pour la surveillance des conditions de stockage de pommes de terre sur des milliers de mètres carrés.</p>
+                    <ul class="project-details">
+                        <li><strong>Microcontrôleur :</strong> Utilisation d'un ESP32-C6 (gestion radio Zigbee et très faible consommation).</li>
+                        <li><strong>Protocoles de communication :</strong> Intégration de multiples capteurs via I2C (AHT20 pour T°/HR, CCS811 pour eCO2/TVOC) et UART (DGS2 pour l'Éthylène).</li>
+                        <li><strong>Algorithmique :</strong> Parsing avancé des trames UART du capteur d'éthylène et conversion analogique-numérique (ADC 12 bits) pour le phototransistor.</li>
+                        <li><strong>Fiabilité :</strong> Implémentation d'une routine de compensation environnementale (injection des données de T°/Humidité dans le capteur MOX pour corriger sa dérive).</li>
+                    </ul>
+                    <div class="tech-stack">
+                        <span>C++ (Arduino)</span><span>I2C/UART</span><span>ESP32-C6</span><span>Basse Consommation</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projet 3 : Robot IA AlphAI -->
+            <div class="project-showcase">
+                <div class="project-image">
+                    <div class="placeholder-box">
+                        <i class="fa-solid fa-robot"></i>
+                        <span>🖼️ Insérer ici : Photo du robot AlphAI ou courbes d'apprentissage</span>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h4>Pilotage Autonome d'un Robot par Intelligence Artificielle</h4>
+                    <p class="project-subtitle">Machine Learning & Vision</p>
+                    <p>Programmation d'un robot "AlphAI" pour la navigation autonome sur un circuit complexe par analyse d'images embarquée et télémétrie ultrason.</p>
+                    <ul class="project-details">
+                        <li><strong>Algorithme KNN :</strong> Implémentation de l'algorithme des plus proches voisins (K=1) pour minimiser le temps de calcul. Optimisation du traitement d'image en excluant les zones mortes de la caméra pour analyser uniquement les tracés au sol.</li>
+                        <li><strong>Réseaux de Neurones :</strong> Conception d'un modèle neuronal (24 entrées RGB et distance, 32 neurones cachés, 4 sorties directionnelles).</li>
+                        <li><strong>Apprentissage Supervisé :</strong> Création de bases de données de situations saines (suivi de ligne) et de manœuvres d'évitement de murs pour assurer la robustesse du modèle en course.</li>
+                    </ul>
+                    <div class="tech-stack">
+                        <span>Python</span><span>Machine Learning</span><span>Réseaux de Neurones</span><span>Vision par Ordinateur</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projet 4 : Salle Blanche (Télémètre) -->
+            <div class="project-showcase reverse">
+                <div class="project-image">
+                    <div class="placeholder-box">
+                        <i class="fa-solid fa-microscope"></i>
+                        <span>🖼️ Insérer ici : Photo en tenue Salle Blanche ou Vue Microscope (TLM)</span>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h4>Microfabrication & Caractérisation de Semi-conducteurs</h4>
+                    <p class="project-subtitle">Salle Blanche IEMN - Nanotechnologies</p>
+                    <p>Réalisation complète du procédé de fabrication d'un composant semi-conducteur sur un substrat d'Arséniure de Gallium (GaAs) et analyse de ses propriétés électriques.</p>
+                    <ul class="project-details">
+                        <li><strong>Photolithographie :</strong> Dépôt de résine (AzmLof2020), alignement de masque, insolation UV et développement chimique (MIF 726) dans un environnement contrôlé.</li>
+                        <li><strong>Métallisation & Recuit :</strong> Gravure humide et dépôt multicouche (Ni/Ge/Au/Ti/Au) suivi d'un recuit thermique sous atmosphère contrôlée (H2/Ar) à 400°C.</li>
+                        <li><strong>Caractérisation Électrique :</strong> Utilisation d'une station de microsondes Keithley. Mesure de la mobilité des porteurs par effet Hall et extraction de la résistance de contact spécifique (Rc) via la méthode <strong>TLM (Transmission Line Method)</strong>.</li>
+                    </ul>
+                    <div class="tech-stack">
+                        <span>Salle Blanche</span><span>Photolithographie</span><span>Effet Hall</span><span>Keithley SMU</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projet 5 : Antenne RF & Filtre -->
+            <div class="project-showcase">
+                <div class="project-image">
+                    <div class="placeholder-box">
+                        <i class="fa-solid fa-satellite-dish"></i>
+                        <span>🖼️ Insérer ici : Diagramme HFSS ou VNA S-Parameters</span>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h4>Conception RF : Antenne Patch & Filtre Passe-Bande 2.4 GHz</h4>
+                    <p class="project-subtitle">Hyperfréquences & Électromagnétisme</p>
+                    <p>Dimensionnement, simulation et fabrication de composants hyperfréquences passifs sur substrat FR-4 pour la bande ISM (Wi-Fi).</p>
+                    <ul class="project-details">
+                        <li><strong>Dimensionnement :</strong> Calcul analytique de la largeur (37.5mm) et de la longueur effective (28.3mm) du patch en intégrant l'effet de frange.</li>
+                        <li><strong>Simulation 3D :</strong> Modélisation sous <strong>ANSYS HFSS</strong> et <strong>Qucs Studio</strong> (synthèse de filtre Butterworth ordre 5 en microrubans). Étude du diagramme de rayonnement.</li>
+                        <li><strong>Fabrication & Mesure :</strong> Routage CAO, gravure chimique et soudure des connecteurs SMA. Caractérisation expérimentale avec un <strong>Analyseur de Réseau Vectoriel (VNA)</strong>.</li>
+                        <li><strong>Analyse critique :</strong> Rétro-simulation pour identifier la dérive de la fréquence de coupure (mesurée à 2.59 GHz) causée par l'incertitude sur la permittivité du substrat et un défaut de gravure.</li>
+                    </ul>
+                    <div class="tech-stack">
+                        <span>HFSS</span><span>Qucs Studio</span><span>VNA</span><span>Microruban (Microstrip)</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-light">
+        <div class="section-container" style="text-align: center;">
+            <h3 class="section-title">Contact & Liens</h3>
+            <p style="max-width: 600px; margin: 0 auto 2rem auto; font-size: 1.1rem;">
+                Vous êtes intéressé par mon profil ou vous souhaitez discuter de mes projets ? Je suis à l'écoute de nouvelles opportunités.
+            </p>
+            <div class="contact-links">
+                <a href="mailto:votre.email@exemple.com" class="btn btn-primary"><i class="fa-solid fa-envelope"></i> M'envoyer un email</a>
+                <a href="https://linkedin.com/in/votreprofil" target="_blank" class="btn btn-outline"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/votreprofil" target="_blank" class="btn btn-outline"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Yassine Chentouf. Portfolio d'Ingénierie. Conçu avec passion.</p>
+    </footer>
+
+    <!-- Script pour le menu sticky et le scroll doux -->
+    <script>
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.background = 'rgba(255, 255, 255, 0.98)';
+                navbar.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+            } else {
+                navbar.style.background = '#ffffff';
+                navbar.style.boxShadow = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
