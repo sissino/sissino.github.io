@@ -1,167 +1,65 @@
-/* Variables CSS */
-:root {
-    --primary-color: #0f172a;      /* Bleu nuit très sombre (texte principal) */
-    --accent-color: #2563eb;       /* Bleu roi technique */
-    --accent-hover: #1d4ed8;
-    --bg-color: #ffffff;
-    --bg-light: #f8fafc;           /* Gris très très clair pour séparer les sections */
-    --text-color: #334155;         /* Gris ardoise pour les paragraphes (lisibilité) */
-    --border-color: #e2e8f0;
-    --placeholder-bg: #f1f5f9;
-    --placeholder-border: #cbd5e1;
-    --transition: all 0.3s ease;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth; /* Pour le défilement fluide */
-}
-
-body {
-    font-family: 'Inter', sans-serif;
-    color: var(--text-color);
-    background-color: var(--bg-color);
-    line-height: 1.7;
-    overflow-x: hidden;
-}
-
-/* Typographie de base */
-h1, h2, h3, h4, h5 {
-    color: var(--primary-color);
-    line-height: 1.2;
-}
-
-/* NAVBAR */
-.navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: var(--bg-color);
-    z-index: 1000;
-    transition: var(--transition);
-    border-bottom: 1px solid var(--border-color);
-}
-
-.nav-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 1.2rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    font-size: 1.5rem;
-    font-weight: 800;
-    color: var(--primary-color);
-    text-decoration: none;
-    letter-spacing: -0.5px;
-}
-
-.logo span {
-    color: var(--accent-color);
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 2.5rem;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: var(--text-color);
-    font-weight: 500;
-    font-size: 0.95rem;
-    transition: var(--transition);
-}
-
-.nav-links a:hover {
-    color: var(--accent-color);
-}
-
-/* HERO SECTION */
-.hero {
-    min-height: 90vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 2rem;
-    background: radial-gradient(circle at top right, rgba(37, 99, 235, 0.05), transparent 40%);
-}
-
-.hero-content {
-    max-width: 900px;
-    text-align: center;
-    margin-top: 5rem;
-}
-
-.hero h1 {
-    font-size: 3.5rem;
-    font-weight: 800;
-    margin-bottom: 1rem;
-    letter-spacing: -1px;
-}
-
-.highlight {
-    color: var(--accent-color);
-}
-
-.hero h2 {
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: #475569;
-    margin-bottom: 1.5rem;
-}
-
-.hero p {
-    font-size: 1.1rem;
-    max-width: 700px;
-    margin: 0 auto 2.5rem auto;
-    color: var(--text-color);
-}
-
-/* BOUTONS */
+/* BOUTONS & ANIMATIONS */
 .btn {
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.6rem;
     padding: 0.8rem 1.8rem;
-    border-radius: 6px;
+    border-radius: 8px;
     font-weight: 600;
     font-size: 1rem;
     text-decoration: none;
-    transition: var(--transition);
+    /* Transition ultra-fluide pour l'animation */
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); 
     cursor: pointer;
+    position: relative;
 }
 
+/* Effet "Pression" quand on clique sur n'importe quel bouton */
+.btn:active {
+    transform: scale(0.96) translateY(2px) !important;
+    box-shadow: none !important;
+}
+
+/* Animation des icônes à l'intérieur des boutons */
+.btn i {
+    transition: transform 0.3s ease;
+}
+
+.btn:hover i {
+    transform: scale(1.15) rotate(5deg); /* L'icône grossit et pivote un peu */
+}
+
+/* Bouton Principal (Bleu) */
 .btn-primary {
     background-color: var(--accent-color);
     color: white;
     border: 2px solid var(--accent-color);
+    box-shadow: 0 4px 6px rgba(37, 99, 235, 0.2); /* Ombre de base */
 }
 
 .btn-primary:hover {
     background-color: var(--accent-hover);
     border-color: var(--accent-hover);
-    transform: translateY(-2px);
+    transform: translateY(-4px); /* Le bouton se soulève */
+    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.4); /* L'ombre s'agrandit */
 }
 
+/* Bouton Secondaire (Sombre) */
 .btn-secondary {
     background-color: var(--primary-color);
     color: white;
     border: 2px solid var(--primary-color);
+    box-shadow: 0 4px 6px rgba(15, 23, 42, 0.2);
 }
 
 .btn-secondary:hover {
     background-color: #1e293b;
     border-color: #1e293b;
-    transform: translateY(-2px);
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(15, 23, 42, 0.4);
 }
 
+/* Bouton Contour (Transparent) */
 .btn-outline {
     background-color: transparent;
     color: var(--primary-color);
@@ -170,236 +68,13 @@ h1, h2, h3, h4, h5 {
 
 .btn-outline:hover {
     border-color: var(--primary-color);
-    transform: translateY(-2px);
+    color: var(--primary-color);
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
 }
 
 .hero-actions {
     display: flex;
     justify-content: center;
-    gap: 1rem;
-}
-
-/* SECTIONS STRUCTURE */
-.section {
-    padding: 6rem 2rem;
-}
-
-.bg-light {
-    background-color: var(--bg-light);
-}
-
-.section-container {
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-.section-title {
-    font-size: 2rem;
-    font-weight: 800;
-    margin-bottom: 3rem;
-    position: relative;
-    display: inline-block;
-}
-
-.section-title::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 0;
-    width: 60px;
-    height: 4px;
-    background-color: var(--accent-color);
-    border-radius: 2px;
-}
-
-/* TIMELINE (EXPÉRIENCES) */
-.timeline {
-    position: relative;
-    padding-left: 2rem;
-    border-left: 3px solid var(--border-color);
-}
-
-.timeline-item {
-    position: relative;
-    margin-bottom: 3rem;
-}
-
-.timeline-dot {
-    position: absolute;
-    left: -2.4rem;
-    top: 0.5rem;
-    width: 16px;
-    height: 16px;
-    background-color: var(--accent-color);
-    border-radius: 50%;
-    border: 3px solid var(--bg-light);
-}
-
-.timeline-content h4 {
-    font-size: 1.3rem;
-    margin-bottom: 0.2rem;
-}
-
-.timeline-content h5 {
-    font-size: 1rem;
-    font-weight: 400;
-    color: #64748b;
-    margin-bottom: 1rem;
-}
-
-.timeline-content ul {
-    margin-top: 1rem;
-    margin-left: 1.5rem;
-    color: var(--text-color);
-}
-
-.timeline-content li {
-    margin-bottom: 0.5rem;
-}
-
-/* PROJECT SHOWCASE (Le coeur du design de Nathan Hoong) */
-.project-showcase {
-    display: flex;
-    align-items: center;
-    gap: 4rem;
-    margin-bottom: 6rem;
-}
-
-/* Classe pour inverser le layout 1 fois sur 2 */
-.project-showcase.reverse {
-    flex-direction: row-reverse;
-}
-
-.project-image {
-    flex: 1;
-    width: 100%;
-}
-
-/* LA ZONE GRISÉE MAGIQUE POUR TES PHOTOS */
-.placeholder-box {
-    width: 100%;
-    aspect-ratio: 16/10;
-    background: linear-gradient(135deg, var(--placeholder-bg) 0%, #e2e8f0 100%);
-    border: 2px dashed var(--placeholder-border);
-    border-radius: 12px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #64748b;
-    font-family: monospace;
-    font-size: 1.1rem;
-    text-align: center;
-    padding: 2rem;
-    transition: var(--transition);
-}
-
-.placeholder-box i {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    color: var(--placeholder-border);
-}
-
-.placeholder-box:hover {
-    border-color: var(--accent-color);
-    color: var(--accent-color);
-}
-
-.project-info {
-    flex: 1;
-}
-
-.project-info h4 {
-    font-size: 1.8rem;
-    margin-bottom: 0.5rem;
-}
-
-.project-subtitle {
-    font-weight: 600;
-    color: var(--accent-color);
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 0.85rem;
-}
-
-.project-details {
-    list-style: none;
-    margin-top: 1rem;
-    margin-bottom: 1.5rem;
-}
-
-.project-details li {
-    position: relative;
-    padding-left: 1.5rem;
-    margin-bottom: 0.8rem;
-}
-
-.project-details li::before {
-    content: '→';
-    position: absolute;
-    left: 0;
-    color: var(--accent-color);
-    font-weight: bold;
-}
-
-/* TECH STACK TAGS */
-.tech-stack {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.6rem;
-    margin-top: 1.5rem;
-}
-
-.tech-stack span {
-    background-color: #f1f5f9;
-    color: #475569;
-    padding: 0.4rem 0.8rem;
-    border-radius: 4px;
-    font-size: 0.85rem;
-    font-weight: 600;
-    border: 1px solid var(--border-color);
-}
-
-/* CONTACT LINKS */
-.contact-links {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
-
-/* FOOTER */
-footer {
-    background-color: var(--primary-color);
-    color: #94a3b8;
-    text-align: center;
-    padding: 2rem;
-    font-size: 0.9rem;
-}
-
-/* RESPONSIVE DESIGN (Mobile & Tablet) */
-@media (max-width: 900px) {
-    .project-showcase, .project-showcase.reverse {
-        flex-direction: column;
-        gap: 2rem;
-    }
-    
-    .hero h1 {
-        font-size: 2.5rem;
-    }
-    
-    .hero-actions {
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 768px) {
-    .nav-links {
-        display: none; /* Cache le menu sur smartphone pour l'instant */
-    }
-    
-    .section {
-        padding: 4rem 1.5rem;
-    }
+    gap: 1.5rem;
 }
