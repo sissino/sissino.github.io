@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yassine Chentouf | Portfolio Ingénierie</title>
+    <!-- Police d'écriture moderne -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- Icônes -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <a href="#home" class="logo">Yassine<span>.</span></a>
@@ -22,6 +25,7 @@
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
             <h1>Bonjour, je suis <span class="highlight">Yassine Chentouf</span>.</h1>
@@ -29,18 +33,24 @@
             <p>
                 Passionné par la conception de systèmes complexes, de la modélisation mathématique jusqu'à la microfabrication en salle blanche et au déploiement d'intelligences artificielles embarquées.
             </p>
+            <div style="background: rgba(37, 99, 235, 0.1); padding: 1rem; border-radius: 8px; border-left: 4px solid var(--accent-color); margin-bottom: 2.5rem; display: inline-block; text-align: left;">
+                <strong>🚀 À la recherche d'une alternance de 3 ans en ingénierie pour la rentrée 2026.</strong>
+            </div>
             <div class="hero-actions">
                 <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-microchip"></i> Voir mon travail</a>
-                <a href="cv-yassine-chentouf.pdf" target="_blank" class="btn btn-secondary"><i class="fa-solid fa-file-pdf"></i> Mon CV</a>
+                <!-- Le lien correspond maintenant EXACTEMENT au nom de ton fichier PDF sur GitHub -->
+                <a href="CV_Yassine_Chentouf.pdf" target="_blank" class="btn btn-secondary"><i class="fa-solid fa-file-pdf"></i> Mon CV</a>
             </div>
         </div>
     </section>
 
+    <!-- Expériences Section -->
     <section id="experience" class="section bg-light">
         <div class="section-container">
             <h3 class="section-title">Expérience Professionnelle</h3>
             
             <div class="timeline">
+                <!-- Expérience 1 -->
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
@@ -58,6 +68,7 @@
                     </div>
                 </div>
 
+                <!-- Expérience 2 -->
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
@@ -78,10 +89,12 @@
         </div>
     </section>
 
+    <!-- Projets Section -->
     <section id="projects" class="section">
         <div class="section-container">
             <h3 class="section-title">Projets d'Ingénierie & R&D</h3>
 
+            <!-- Projet 1 : Home Trainer -->
             <div class="project-showcase">
                 <div class="project-image">
                     <img src="projet-hometrainer.png" alt="Home Trainer Interactif" style="width: 100%; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
@@ -105,6 +118,7 @@
                 </div>
             </div>
 
+            <!-- Projet 2 : Capteur Hangar -->
             <div class="project-showcase reverse">
                 <div class="project-image">
                     <img src="projet-capteur-iot.png" alt="PCB du Capteur IoT" style="width: 100%; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
@@ -128,6 +142,7 @@
                 </div>
             </div>
 
+            <!-- Projet 3 : Robot IA AlphAI -->
             <div class="project-showcase">
                 <div class="project-image">
                     <img src="projet-robot-ia.png" alt="Robot IA AlphAI" style="width: 100%; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
@@ -150,6 +165,7 @@
                 </div>
             </div>
 
+            <!-- Projet 4 : Salle Blanche (Télémètre) -->
             <div class="project-showcase reverse">
                 <div class="project-image">
                     <img src="projet-microfabrication.png" alt="Microfabrication en salle blanche" style="width: 100%; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
@@ -172,6 +188,7 @@
                 </div>
             </div>
 
+            <!-- Projet 5 : Antenne RF & Filtre -->
             <div class="project-showcase">
                 <div class="project-image">
                     <img src="projet-antenne-rf.png" alt="Conception Antenne HFSS" style="width: 100%; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
@@ -198,24 +215,35 @@
         </div>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact" class="section bg-light">
         <div class="section-container" style="text-align: center;">
             <h3 class="section-title">Contact & Liens</h3>
             <p style="max-width: 600px; margin: 0 auto 2rem auto; font-size: 1.1rem;">
-                Vous êtes intéressé par mon profil ou vous souhaitez discuter de mes projets ? Je suis à l'écoute de nouvelles opportunités.
+                Vous êtes intéressé par mon profil ou vous souhaitez discuter d'une opportunité d'alternance ? N'hésitez pas à me contacter directement !
             </p>
-            <div class="contact-links">
-                <a href="mailto:votre.email@exemple.com" class="btn btn-primary"><i class="fa-solid fa-envelope"></i> M'envoyer un email</a>
-                <a href="https://linkedin.com/in/votreprofil" target="_blank" class="btn btn-outline"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-                <a href="https://github.com/votreprofil" target="_blank" class="btn btn-outline"><i class="fa-brands fa-github"></i> GitHub</a>
+            
+            <div class="contact-links" style="margin-bottom: 2rem;">
+                <!-- Bouton qui révèle les informations de contact -->
+                <button onclick="document.getElementById('contact-info').style.display='block'" class="btn btn-primary"><i class="fa-solid fa-address-card"></i> Afficher mes coordonnées</button>
+                <a href="https://www.linkedin.com/in/yassine-chen/" target="_blank" class="btn btn-outline"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/sissino" target="_blank" class="btn btn-outline"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+
+            <!-- La zone d'information masquée qui apparaîtra au clic -->
+            <div id="contact-info" style="display: none; background: #fff; padding: 1.5rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); max-width: 400px; margin: 0 auto; border: 1px solid #e2e8f0; text-align: left;">
+                <p style="margin-bottom: 0.8rem; font-size: 1.1rem;"><i class="fa-solid fa-envelope" style="color: #2563eb; margin-right: 10px;"></i> <strong>Email :</strong> <a href="mailto:yassine2004chentouf@gmail.com" style="color: #334155; text-decoration: none;">yassine2004chentouf@gmail.com</a></p>
+                <p style="font-size: 1.1rem;"><i class="fa-solid fa-phone" style="color: #2563eb; margin-right: 10px;"></i> <strong>Téléphone :</strong> 07 45 64 99 28</p>
             </div>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
         <p>&copy; 2026 Yassine Chentouf. Portfolio d'Ingénierie. Conçu avec passion.</p>
     </footer>
 
+    <!-- Script pour le menu sticky et le scroll doux -->
     <script>
         window.addEventListener('scroll', function() {
             const navbar = document.querySelector('.navbar');
