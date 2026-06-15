@@ -9,6 +9,29 @@
     <!-- Icônes -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Style ajouté pour le bouton de langue */
+        .lang-toggle {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: 600;
+            padding: 0.4rem 0.8rem;
+            border: 2px solid var(--border-color);
+            border-radius: 20px;
+            transition: var(--transition);
+            margin-left: auto; /* Pousse le bouton à droite */
+        }
+        .lang-toggle:hover {
+            border-color: var(--accent-color);
+            color: var(--accent-color);
+        }
+        @media (max-width: 768px) {
+            .lang-toggle { margin-left: 1rem; }
+        }
+    </style>
 </head>
 <body>
 
@@ -23,6 +46,8 @@
                 <li><a href="#projects">Projets & R&D</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <!-- Bouton Langue -->
+            <a href="#" class="lang-toggle" title="Switch to English version"><i class="fa-solid fa-globe"></i> EN</a>
         </div>
     </nav>
 
@@ -35,7 +60,7 @@
                 Passionné par la conception de systèmes complexes, de la modélisation mathématique jusqu'à la microfabrication en salle blanche et au déploiement d'intelligences artificielles embarquées.
             </p>
             <div style="background: rgba(37, 99, 235, 0.1); padding: 1rem; border-radius: 8px; border-left: 4px solid var(--accent-color); margin-bottom: 2.5rem; display: inline-block; text-align: left;">
-                <strong>À la recherche d'une alternance de 3 ans en ingénierie pour la rentrée 2026.</strong>
+                <strong>🚀 À la recherche d'une alternance de 3 ans en ingénierie pour la rentrée 2026.</strong>
             </div>
             <div class="hero-actions">
                 <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-microchip"></i> Voir mon travail</a>
@@ -92,7 +117,7 @@
     <!-- Compétences Section -->
     <section id="skills" class="section">
         <div class="section-container">
-            <h3 class="section-title">Mes Compétences</h3>
+            <h3 class="section-title">Mes Compétences Techniques</h3>
             <p style="margin-bottom: 3rem; font-size: 1.1rem; color: #475569;">
                 Aperçu de mes expertises techniques acquises lors de ma formation en BUT GEII et de mes différentes expériences professionnelles.
             </p>
@@ -142,6 +167,36 @@
                         <li style="margin-bottom: 0.8rem;"><i class="fa-solid fa-check" style="color: var(--accent-color); margin-right: 8px;"></i> <strong>Conception CAO :</strong> AutoCAD, Caneco BT</li>
                         <li style="margin-bottom: 0.8rem;"><i class="fa-solid fa-check" style="color: var(--accent-color); margin-right: 8px;"></i> <strong>Éclairagisme :</strong> Dialux Evo, respect des normes NF EN 12464-1</li>
                     </ul>
+                </div>
+            </div>
+
+            <!-- Ajout des Soft Skills -->
+            <h3 class="section-title" style="margin-top: 5rem;">Mes Soft Skills (Savoir-être)</h3>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2rem;">
+                
+                <div class="card" style="text-align: center; padding: 2rem 1.5rem; margin-bottom: 0;">
+                    <i class="fa-solid fa-users" style="font-size: 2.5rem; color: var(--accent-color); margin-bottom: 1rem;"></i>
+                    <h4 style="margin-bottom: 0.5rem; color: var(--primary-color);">Travail en Équipe</h4>
+                    <p style="font-size: 0.95rem; color: var(--text-color);">Collaboration efficace au sein d'équipes pluridisciplinaires (ex: équipe de 8 sur projet mécanique/IT, interactions ingénieurs et techniciens).</p>
+                </div>
+
+                <div class="card" style="text-align: center; padding: 2rem 1.5rem; margin-bottom: 0;">
+                    <i class="fa-solid fa-magnifying-glass-chart" style="font-size: 2.5rem; color: var(--accent-color); margin-bottom: 1rem;"></i>
+                    <h4 style="margin-bottom: 0.5rem; color: var(--primary-color);">Rigueur & Précision</h4>
+                    <p style="font-size: 0.95rem; color: var(--text-color);">Sens du détail prouvé par l'application stricte des protocoles HSE en salle blanche et le respect rigoureux des normes électriques industrielles.</p>
+                </div>
+
+                <div class="card" style="text-align: center; padding: 2rem 1.5rem; margin-bottom: 0;">
+                    <i class="fa-solid fa-lightbulb" style="font-size: 2.5rem; color: var(--accent-color); margin-bottom: 1rem;"></i>
+                    <h4 style="margin-bottom: 0.5rem; color: var(--primary-color);">Résolution de Problèmes</h4>
+                    <p style="font-size: 0.95rem; color: var(--text-color);">Capacité d'analyse et de diagnostic (troubleshooting) face aux imprévus techniques, aux limites matérielles ou aux divergences mathématiques.</p>
+                </div>
+
+                <div class="card" style="text-align: center; padding: 2rem 1.5rem; margin-bottom: 0;">
+                    <i class="fa-solid fa-comments" style="font-size: 2.5rem; color: var(--accent-color); margin-bottom: 1rem;"></i>
+                    <h4 style="margin-bottom: 0.5rem; color: var(--primary-color);">Communication</h4>
+                    <p style="font-size: 0.95rem; color: var(--text-color);">Aisance dans la vulgarisation d'informations, la rédaction de dossiers de conception et les soutenances orales (français et anglais).</p>
                 </div>
                 
             </div>
