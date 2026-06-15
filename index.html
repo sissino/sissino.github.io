@@ -20,6 +20,7 @@
                 <li><a href="#about">À propos</a></li>
                 <li><a href="#experience">Expérience</a></li>
                 <li><a href="#projects">Projets & R&D</a></li>
+                <li><a href="#skills">Compétences</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -38,7 +39,6 @@
             </div>
             <div class="hero-actions">
                 <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-microchip"></i> Voir mon travail</a>
-                <!-- Le lien correspond maintenant EXACTEMENT au nom de ton fichier PDF sur GitHub -->
                 <a href="CV_Yassine_Chentouf.pdf" target="_blank" class="btn btn-secondary"><i class="fa-solid fa-file-pdf"></i> Mon CV</a>
             </div>
         </div>
@@ -215,8 +215,66 @@
         </div>
     </section>
 
+    <!-- Compétences Section -->
+    <section id="skills" class="section bg-light">
+        <div class="section-container">
+            <h3 class="section-title">Mes Compétences</h3>
+            <p style="margin-bottom: 3rem; font-size: 1.1rem; color: #475569;">
+                Aperçu de mes expertises techniques acquises lors de ma formation en BUT GEII et de mes différentes expériences professionnelles.
+            </p>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+                
+                <!-- Carte 1 : Informatique & IA -->
+                <div class="card" style="margin-bottom: 0;">
+                    <h4 style="margin-bottom: 1.2rem; color: var(--accent-color); font-size: 1.3rem;"><i class="fa-solid fa-code"></i> Informatique, IA & Contrôle</h4>
+                    <ul style="list-style-type: none; padding: 0;">
+                        <li style="margin-bottom: 0.8rem;"><i class="fa-solid fa-check" style="color: var(--accent-color); margin-right: 8px;"></i> <strong>Programmation :</strong> Python (Flask, Dash), C/C++</li>
+                        <li style="margin-bottom: 0.8rem;"><i class="fa-solid fa-check" style="color: var(--accent-color); margin-right: 8px;"></i> <strong>Machine Learning :</strong> Réseaux de neurones, algorithme KNN</li>
+                        <li style="margin-bottom: 0.8rem;"><i class="fa-solid fa-check" style="color: var(--accent-color); margin-right: 8px;"></i> <strong>Modélisation :</strong> Modèles d'état, résolution d'équations (Méthode d'Euler)</li>
+                        <li style="margin-bottom: 0.8rem;"><i class="fa-solid fa-check" style="color: var(--accent-color); margin-right: 8px;"></i> <strong>Automatique :</strong> Théorie du contrôle, observateurs adaptatifs</li>
+                    </ul>
+                </div>
+
+                <!-- Carte 2 : Systèmes Embarqués -->
+                <div class="card" style="margin-bottom: 0;">
+                    <h4 style="margin-bottom: 1.2rem; color: var(--accent-color); font-size: 1.3rem;"><i class="fa-solid fa-microchip"></i> Systèmes Embarqués & IoT</h4>
+                    <ul style="list-style-type: none; padding: 0;">
+                        <li style="margin-bottom: 0.8rem;"><i class="fa-solid fa-check" style="color: var(--accent-color); margin-right: 8px;"></i> <strong>Microcontrôleurs :</strong> ESP32, ESP32-C6, Raspberry Pi</li>
+                        <li style="margin-bottom: 0.8rem;"><i class="fa-solid fa-check" style="color: var(--accent-color); margin-right: 8px;"></i> <strong>Bus & Protocoles :</strong> I2C, UART, SPI, Zigbee</li>
+                        <li style="margin-bottom: 0.8rem;"><i class="fa-solid fa-check" style="color: var(--accent-color); margin-right: 8px;"></i> <strong>Capteurs :</strong> AHT20, CCS811, DGS2, Effet Hall</li>
+                        <li style="margin-bottom: 0.8rem;"><i class="fa-solid fa-check" style="color: var(--accent-color); margin-right: 8px;"></i> <strong>Optimisation :</strong> Gestion d'alimentation (Deep-sleep)</li>
+                    </ul>
+                </div>
+
+                <!-- Carte 3 : Électrotechnique -->
+                <div class="card" style="margin-bottom: 0;">
+                    <h4 style="margin-bottom: 1.2rem; color: var(--accent-color); font-size: 1.3rem;"><i class="fa-solid fa-industry"></i> Électrotechnique & Automatisme</h4>
+                    <ul style="list-style-type: none; padding: 0;">
+                        <li style="margin-bottom: 0.8rem;"><i class="fa-solid fa-check" style="color: var(--accent-color); margin-right: 8px;"></i> <strong>Automatisme :</strong> Grafcet, Ladder, Programmation API</li>
+                        <li style="margin-bottom: 0.8rem;"><i class="fa-solid fa-check" style="color: var(--accent-color); margin-right: 8px;"></i> <strong>Distribution :</strong> Câblage Haute et Basse tension, architecture de TGBT</li>
+                        <li style="margin-bottom: 0.8rem;"><i class="fa-solid fa-check" style="color: var(--accent-color); margin-right: 8px;"></i> <strong>Conception CAO :</strong> AutoCAD, Caneco BT</li>
+                        <li style="margin-bottom: 0.8rem;"><i class="fa-solid fa-check" style="color: var(--accent-color); margin-right: 8px;"></i> <strong>Éclairagisme :</strong> Dialux Evo, respect des normes NF EN 12464-1</li>
+                    </ul>
+                </div>
+
+                <!-- Carte 4 : Électronique RF -->
+                <div class="card" style="margin-bottom: 0;">
+                    <h4 style="margin-bottom: 1.2rem; color: var(--accent-color); font-size: 1.3rem;"><i class="fa-solid fa-bolt"></i> Électronique & Microfabrication</h4>
+                    <ul style="list-style-type: none; padding: 0;">
+                        <li style="margin-bottom: 0.8rem;"><i class="fa-solid fa-check" style="color: var(--accent-color); margin-right: 8px;"></i> <strong>Simulation RF :</strong> HFSS, Qucs Studio, LTspice, Antennes & Filtres</li>
+                        <li style="margin-bottom: 0.8rem;"><i class="fa-solid fa-check" style="color: var(--accent-color); margin-right: 8px;"></i> <strong>Instrumentation :</strong> Analyseur de réseau (VNA), LabJack, SMU Keithley, Oscilloscope</li>
+                        <li style="margin-bottom: 0.8rem;"><i class="fa-solid fa-check" style="color: var(--accent-color); margin-right: 8px;"></i> <strong>Salle Blanche :</strong> Photolithographie, métallisation, gravure chimique</li>
+                        <li style="margin-bottom: 0.8rem;"><i class="fa-solid fa-check" style="color: var(--accent-color); margin-right: 8px;"></i> <strong>Caractérisation :</strong> Effet Hall, méthode TLM (Transmission Line Method)</li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
-    <section id="contact" class="section bg-light">
+    <section id="contact" class="section">
         <div class="section-container" style="text-align: center;">
             <h3 class="section-title">Contact & Liens</h3>
             <p style="max-width: 600px; margin: 0 auto 2rem auto; font-size: 1.1rem;">
@@ -227,11 +285,10 @@
                 <!-- Bouton qui révèle les informations de contact -->
                 <button onclick="document.getElementById('contact-info').style.display='block'" class="btn btn-primary"><i class="fa-solid fa-address-card"></i> Afficher mes coordonnées</button>
                 <a href="https://www.linkedin.com/in/yassine-chen/" target="_blank" class="btn btn-outline"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-                <a href="https://github.com/sissino" target="_blank" class="btn btn-outline"><i class="fa-brands fa-github"></i> GitHub</a>
             </div>
 
             <!-- La zone d'information masquée qui apparaîtra au clic -->
-            <div id="contact-info" style="display: none; background: #fff; padding: 1.5rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); max-width: 400px; margin: 0 auto; border: 1px solid #e2e8f0; text-align: left;">
+            <div id="contact-info" style="display: none; background: #f8fafc; padding: 1.5rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); max-width: 400px; margin: 0 auto; border: 1px solid #e2e8f0; text-align: left;">
                 <p style="margin-bottom: 0.8rem; font-size: 1.1rem;"><i class="fa-solid fa-envelope" style="color: #2563eb; margin-right: 10px;"></i> <strong>Email :</strong> <a href="mailto:yassine2004chentouf@gmail.com" style="color: #334155; text-decoration: none;">yassine2004chentouf@gmail.com</a></p>
                 <p style="font-size: 1.1rem;"><i class="fa-solid fa-phone" style="color: #2563eb; margin-right: 10px;"></i> <strong>Téléphone :</strong> 07 45 64 99 28</p>
             </div>
