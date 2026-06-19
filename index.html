@@ -8,7 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <!-- Icônes -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <!-- Le ?v=2 force le navigateur à vider le cache et charger ton beau design -->
+    <link rel="stylesheet" href="style.css?v=2">
 </head>
 <body>
 
@@ -35,7 +36,7 @@
                 Passionné par la conception de systèmes complexes, de la modélisation mathématique jusqu'à la microfabrication en salle blanche et au déploiement d'intelligences artificielles embarquées.
             </p>
             <div style="background: rgba(37, 99, 235, 0.1); padding: 1rem; border-radius: 8px; border-left: 4px solid var(--accent-color); margin-bottom: 2.5rem; display: inline-block; text-align: left;">
-                <strong>À la recherche d'une alternance de 3 ans en ingénierie pour la rentrée 2026.</strong>
+                <strong>🚀 À la recherche d'une alternance de 3 ans en ingénierie pour la rentrée 2026.</strong>
             </div>
             <div class="hero-actions">
                 <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-microchip"></i> Voir mon travail</a>
@@ -97,10 +98,10 @@
                 Aperçu de mes expertises techniques acquises lors de ma formation en BUT GEII et de mes différentes expériences professionnelles.
             </p>
             
-            <!-- Affichage en grille symétrique -->
+            <!-- Affichage en grille symétrique (Tableau 2x2 sur PC) -->
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem;">
                 
-                <!-- Carte 1 : Informatique & IA -->
+                <!-- Ligne 1 - Carte 1 : Informatique & IA -->
                 <div class="card" style="margin-bottom: 0;">
                     <h4 style="margin-bottom: 1.2rem; color: var(--accent-color); font-size: 1.3rem;"><i class="fa-solid fa-code"></i> Informatique, IA & Contrôle</h4>
                     <ul style="list-style-type: none; padding: 0;">
@@ -111,18 +112,18 @@
                     </ul>
                 </div>
 
-                <!-- Carte 2 : Systèmes Embarqués -->
+                <!-- Ligne 1 - Carte 2 : Systèmes Embarqués (Totalement réécrite) -->
                 <div class="card" style="margin-bottom: 0;">
                     <h4 style="margin-bottom: 1.2rem; color: var(--accent-color); font-size: 1.3rem;"><i class="fa-solid fa-microchip"></i> Systèmes Embarqués & IoT</h4>
                     <ul style="list-style-type: none; padding: 0;">
-                        <li style="margin-bottom: 0.8rem;"><i class="fa-solid fa-check" style="color: var(--accent-color); margin-right: 8px;"></i> <strong>Microcontrôleurs :</strong> ESP32, ESP32-C6, Raspberry Pi</li>
-                        <li style="margin-bottom: 0.8rem;"><i class="fa-solid fa-check" style="color: var(--accent-color); margin-right: 8px;"></i> <strong>Bus & Protocoles :</strong> I2C, UART, SPI, Zigbee</li>
-                        <li style="margin-bottom: 0.8rem;"><i class="fa-solid fa-check" style="color: var(--accent-color); margin-right: 8px;"></i> <strong>Capteurs :</strong> AHT20, CCS811, DGS2, Effet Hall</li>
-                        <li style="margin-bottom: 0.8rem;"><i class="fa-solid fa-check" style="color: var(--accent-color); margin-right: 8px;"></i> <strong>Optimisation :</strong> Gestion d'alimentation (Deep-sleep)</li>
+                        <li style="margin-bottom: 0.8rem;"><i class="fa-solid fa-check" style="color: var(--accent-color); margin-right: 8px;"></i> <strong>Microcontrôleurs :</strong> Programmation C/C++ (ESP32, ESP32-C6) et déploiement de réseaux <strong>Zigbee</strong>.</li>
+                        <li style="margin-bottom: 0.8rem;"><i class="fa-solid fa-check" style="color: var(--accent-color); margin-right: 8px;"></i> <strong>Conception CAO :</strong> Schématique et routage de cartes électroniques (PCB) sous <strong>KiCad</strong>.</li>
+                        <li style="margin-bottom: 0.8rem;"><i class="fa-solid fa-check" style="color: var(--accent-color); margin-right: 8px;"></i> <strong>Fabrication :</strong> Impression de cartes via gravure chimique (perchlorure) et fraisage mécanique (CNC).</li>
+                        <li style="margin-bottom: 0.8rem;"><i class="fa-solid fa-check" style="color: var(--accent-color); margin-right: 8px;"></i> <strong>Prototypage :</strong> Soudure de précision (composants traversants et CMS), assemblage et test matériel.</li>
                     </ul>
                 </div>
 
-                <!-- Carte 3 : Électronique RF -->
+                <!-- Ligne 2 - Carte 3 : Électronique RF -->
                 <div class="card" style="margin-bottom: 0;">
                     <h4 style="margin-bottom: 1.2rem; color: var(--accent-color); font-size: 1.3rem;"><i class="fa-solid fa-bolt"></i> Électronique & Microfabrication</h4>
                     <ul style="list-style-type: none; padding: 0;">
@@ -133,7 +134,7 @@
                     </ul>
                 </div>
 
-                <!-- Carte 4 : Électrotechnique -->
+                <!-- Ligne 2 - Carte 4 : Électrotechnique -->
                 <div class="card" style="margin-bottom: 0;">
                     <h4 style="margin-bottom: 1.2rem; color: var(--accent-color); font-size: 1.3rem;"><i class="fa-solid fa-industry"></i> Électrotechnique & Automatisme</h4>
                     <ul style="list-style-type: none; padding: 0;">
