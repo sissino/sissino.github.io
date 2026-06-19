@@ -8,8 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <!-- Icônes -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Le ?v=2 force le navigateur à vider le cache et charger ton beau design -->
-    <link rel="stylesheet" href="style.css?v=2">
+    <!-- Le ?v=3 force le navigateur à vider le cache et charger le nouveau design -->
+    <link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
 
@@ -98,8 +98,8 @@
                 Aperçu de mes expertises techniques acquises lors de ma formation en BUT GEII et de mes différentes expériences professionnelles.
             </p>
             
-            <!-- Affichage en grille symétrique (Tableau 2x2 sur PC) -->
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem;">
+            <!-- Affichage en grille forcée à 2 colonnes (minmax ajusté pour bloquer la 3ème colonne) -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 450px), 1fr)); gap: 2rem;">
                 
                 <!-- Ligne 1 - Carte 1 : Informatique & IA -->
                 <div class="card" style="margin-bottom: 0;">
@@ -112,7 +112,7 @@
                     </ul>
                 </div>
 
-                <!-- Ligne 1 - Carte 2 : Systèmes Embarqués (Totalement réécrite) -->
+                <!-- Ligne 1 - Carte 2 : Systèmes Embarqués -->
                 <div class="card" style="margin-bottom: 0;">
                     <h4 style="margin-bottom: 1.2rem; color: var(--accent-color); font-size: 1.3rem;"><i class="fa-solid fa-microchip"></i> Systèmes Embarqués & IoT</h4>
                     <ul style="list-style-type: none; padding: 0;">
